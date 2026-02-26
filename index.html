@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josephine Dela Cruz | Premium Virtual Assistant Philippines</title>
+    <meta name="description" content="Josephine Dela Cruz is a high-end Virtual Assistant from the Philippines specializing in Digital Marketing, Operations Support, and Canva Brand Design.">
+    <meta name="keywords" content="Virtual Assistant Philippines, Digital Marketing Specialist, Operations Support, Course Support, Canva Brand Design, Josephine Dela Cruz">
+    
+    <!-- Google Search Console Verification - Replace the content value with your actual code -->
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://josephinedelacruz.com/">
+    <meta property="og:title" content="Josephine Dela Cruz | Premium Virtual Assistant Philippines">
+    <meta property="og:description" content="High-end digital support specializing in operations, course management, and brand design.">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/d/1oMOE1QFY2ZUxhtS52yeutJoTg11vbRxy">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Josephine Dela Cruz | Premium Virtual Assistant Philippines">
+    <meta property="twitter:description" content="High-end digital support specializing in operations, course management, and brand design.">
+    <meta property="twitter:image" content="https://lh3.googleusercontent.com/d/1oMOE1QFY2ZUxhtS52yeutJoTg11vbRxy">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Josephine Dela Cruz",
+      "jobTitle": "Virtual Assistant & Digital Marketing Specialist",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Metro Manila",
+        "addressCountry": "Philippines"
+      },
+      "description": "Premium Virtual Assistant specializing in Digital Marketing, Operations Support, and Canva Brand Design.",
+      "image": "https://lh3.googleusercontent.com/d/1oMOE1QFY2ZUxhtS52yeutJoTg11vbRxy",
+      "url": "https://josephinedelacruz.com/"
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --brand-softPink: #FFF5F7;
+            --brand-accentPink: #FFD1DC;
+            --brand-deepPink: #E899AD;
+            --brand-charcoal: #1A1A1A;
+            --brand-grayText: #4A4A4A;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--brand-charcoal);
+            background-color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: var(--brand-accentPink); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--brand-deepPink); }
+
+        /* Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .brand-logo {
+            transition: all 0.4s ease;
+        }
+
+        .group:hover .brand-logo {
+            transform: scale(1.1);
+        }
+
+        .premium-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-white antialiased">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-700 bg-transparent py-8">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="font-serif text-xl font-bold tracking-[0.2em] text-[#1A1A1A]">
+                JOSEPHINE<span class="text-[#FF6B95]">.</span>
+            </a>
+            
+            <div class="hidden md:flex gap-12 items-center font-bold text-[10px] tracking-[0.4em] text-[#4A4A4A]">
+                <a href="#about" class="hover:text-[#1A1A1A] transition-colors">ABOUT</a>
+                <a href="#expertise" class="hover:text-[#1A1A1A] transition-colors">EXPERTISE</a>
+                <a href="#work" class="hover:text-[#1A1A1A] transition-colors">WORK</a>
+                <a href="#contact" class="hover:text-[#1A1A1A] transition-colors">CONTACT</a>
+                <a href="#contact" class="bg-[#1A1A1A] text-white px-8 py-3 rounded-full hover:bg-[#FF6B95] transition-all shadow-xl">WORK WITH ME</a>
+            </div>
+
+            <button class="md:hidden text-[#1A1A1A]" onclick="toggleMobileMenu()">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-10 text-[14px] font-bold tracking-[0.4em] transition-all duration-500 md:hidden translate-y-[-100%] opacity-0">
+            <button class="absolute top-8 right-6" onclick="toggleMobileMenu()"><i data-lucide="x" class="w-8 h-8"></i></button>
+            <a href="#about" onclick="toggleMobileMenu()">ABOUT</a>
+            <a href="#expertise" onclick="toggleMobileMenu()">EXPERTISE</a>
+            <a href="#work" onclick="toggleMobileMenu()">WORK</a>
+            <a href="#contact" onclick="toggleMobileMenu()">CONTACT</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="bg-[#1A1A1A] text-white px-10 py-4 rounded-full">LET'S TALK</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-48 pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-3 px-4 py-2 md:px-5 rounded-full bg-white border border-[#FFD1DC] text-[#FF6B95] text-[8px] md:text-[9px] font-black tracking-[0.1em] md:tracking-[0.3em] mb-12 uppercase shadow-sm reveal max-w-[90vw] md:max-w-none">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#FF6B95] animate-pulse flex-shrink-0"></span>
+                <span class="text-center">Digital Marketing Specialist • Operations & Course Support</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] text-[#1A1A1A] max-w-5xl mx-auto mb-12 reveal tracking-tight">
+                I help businesses build a <span class="italic text-[#FF6B95]">visible, organized</span> digital presence.
+            </h1>
+            <p class="text-lg md:text-xl text-[#4A4A4A] max-w-2xl mx-auto leading-relaxed mb-16 reveal">
+                Handling content strategy, social media management, SEO, and operations support so you can focus on scaling your vision.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 reveal">
+                <a href="#contact" class="px-12 py-6 bg-[#1A1A1A] text-white rounded-full flex items-center justify-center gap-3 font-bold text-xs tracking-[0.2em] hover:bg-[#FF6B95] hover:translate-y-[-4px] transition-all shadow-2xl">
+                    START A PROJECT <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="https://josephinedelacruz.my.canva.site/portfolio" target="_blank" class="px-12 py-6 bg-white border border-gray-100 text-[#1A1A1A] rounded-full font-bold text-xs tracking-[0.2em] hover:bg-[#FFF5F7] transition-all shadow-sm">
+                    VIEW MY WORK
+                </a>
+            </div>
+
+            <div class="mt-24 grid grid-cols-3 gap-8 md:gap-24 reveal">
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl md:text-6xl font-serif font-bold text-[#FF6B95]">3+</span>
+                    <span class="text-[10px] font-black tracking-widest text-[#4A4A4A] uppercase mt-3">Years Exp.</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl md:text-6xl font-serif font-bold text-[#FF6B95]">20+</span>
+                    <span class="text-[10px] font-black tracking-widest text-[#4A4A4A] uppercase mt-3">Clients Served</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl md:text-6xl font-serif font-bold text-[#FF6B95]">100%</span>
+                    <span class="text-[10px] font-black tracking-widest text-[#4A4A4A] uppercase mt-3">Success Rate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative Background Elements -->
+        <div class="absolute top-20 right-[-10%] w-[40%] h-[40%] bg-[#FFD1DC]/20 rounded-full blur-[120px] -z-0"></div>
+        <div class="absolute bottom-10 left-[-5%] w-[30%] h-[30%] bg-[#FFF5F7] rounded-full blur-[100px] -z-0"></div>
+    </header>
+
+    <!-- Tech Stack -->
+    <section class="py-24 bg-white border-y border-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center text-[10px] font-black tracking-[0.4em] text-gray-300 uppercase mb-16">Preferred Toolset & Systems</p>
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-y-16 gap-x-12 items-center reveal">
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=canva.com&sz=128" alt="Canva" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Canva</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=capcut.com&sz=128" alt="CapCut" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">CapCut</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=workspace.google.com&sz=128" alt="Google" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Workspace</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=kajabi.com&sz=128" alt="Kajabi" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Kajabi</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=activecampaign.com&sz=128" alt="ActiveCampaign" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">ActiveCampaign</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=squarespace.com&sz=128" alt="Squarespace" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Squarespace</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=gohighlevel.com&sz=128" alt="GoHighLevel" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">GoHighLevel</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=wordpress.com&sz=128" alt="WordPress" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">WordPress</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=monday.com&sz=128" alt="Monday.com" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Monday.com</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=trello.com&sz=128" alt="Trello" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Trello</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=facebook.com&sz=128" alt="Meta Suite" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Meta Suite</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=128" alt="Notion" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Notion</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=128" alt="AI Tools" class="h-6 brand-logo mb-4" referrerPolicy="no-referrer">
+                    <span class="text-[8px] font-black tracking-widest text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity uppercase">AI Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center">
+            <div class="flex-1 space-y-10 reveal">
+                <h2 class="text-[10px] font-black tracking-[0.4em] text-[#FF6B95] uppercase">About Me</h2>
+                <h3 class="text-4xl md:text-6xl font-serif font-bold leading-tight tracking-tight">My mission is to help you <span class="italic text-[#FF6B95]">show up consistently</span>.</h3>
+                <p class="text-lg text-[#4A4A4A] leading-relaxed">
+                    I work with businesses that need help getting organized and visible online. Over three years, I've learned that business owners don't need more tasks—they need a <span class="text-[#1A1A1A] font-bold italic">strategic partner</span> who handles the backend without constant direction.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 pt-6">
+                    <div class="space-y-3">
+                        <div class="text-[#FF6B95]"><i data-lucide="zap"></i></div>
+                        <h4 class="font-bold text-sm tracking-widest uppercase">Efficient</h4>
+                        <p class="text-sm text-[#4A4A4A] leading-relaxed">Fast turnarounds without cutting corners.</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-[#FF6B95]"><i data-lucide="shield-check"></i></div>
+                        <h4 class="font-bold text-sm tracking-widest uppercase">Reliable</h4>
+                        <p class="text-sm text-[#4A4A4A] leading-relaxed">Consistent delivery and accountability.</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-[#FF6B95]"><i data-lucide="layout"></i></div>
+                        <h4 class="font-bold text-sm tracking-widest uppercase">Strategic</h4>
+                        <p class="text-sm text-[#4A4A4A] leading-relaxed">Thinking beyond tasks to your bigger goals.</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-[#FF6B95]"><i data-lucide="mouse-pointer-2"></i></div>
+                        <h4 class="font-bold text-sm tracking-widest uppercase">Adaptable</h4>
+                        <p class="text-sm text-[#4A4A4A] leading-relaxed">Quick learner across all platforms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 relative reveal">
+                <div class="aspect-square bg-white rounded-full overflow-hidden shadow-2xl relative z-10 max-w-md mx-auto">
+                    <img src="https://lh3.googleusercontent.com/d/1oMOE1QFY2ZUxhtS52yeutJoTg11vbRxy" alt="Josephine Dela Cruz - Premium Virtual Assistant from the Philippines" class="w-full h-full object-cover grayscale transition-all hover:grayscale-0 duration-1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-32 px-6 bg-[#1A1A1A] text-white rounded-[4rem] mx-4 my-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-24 text-center max-w-3xl mx-auto reveal">
+                <h2 class="text-[10px] font-black tracking-[0.5em] text-[#FFD1DC] uppercase mb-6">Services</h2>
+                <h3 class="text-4xl md:text-6xl font-serif font-bold italic tracking-tight">What I can do for you.</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="p-12 rounded-[2.5rem] bg-white/5 border border-white/10 hover:bg-[#FFD1DC] hover:text-[#1A1A1A] transition-all duration-700 group cursor-default reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-[#FFD1DC]/10 flex items-center justify-center text-[#FFD1DC] mb-10 group-hover:bg-[#1A1A1A] group-hover:text-white transition-all">
+                        <i data-lucide="settings"></i>
+                    </div>
+                    <h4 class="text-2xl font-serif font-bold mb-6">Operations Support</h4>
+                    <p class="text-sm opacity-60 leading-relaxed group-hover:opacity-100">Streamlining your backend systems and managing course launches.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-12 rounded-[2.5rem] bg-white/5 border border-white/10 hover:bg-[#FFD1DC] hover:text-[#1A1A1A] transition-all duration-700 group cursor-default reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-[#FFD1DC]/10 flex items-center justify-center text-[#FFD1DC] mb-10 group-hover:bg-[#1A1A1A] group-hover:text-white transition-all">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                    <h4 class="text-2xl font-serif font-bold mb-6">Social Media</h4>
+                    <p class="text-sm opacity-60 leading-relaxed group-hover:opacity-100">Strategic content creation and community management.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-12 rounded-[2.5rem] bg-white/5 border border-white/10 hover:bg-[#FFD1DC] hover:text-[#1A1A1A] transition-all duration-700 group cursor-default reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-[#FFD1DC]/10 flex items-center justify-center text-[#FFD1DC] mb-10 group-hover:bg-[#1A1A1A] group-hover:text-white transition-all">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h4 class="text-2xl font-serif font-bold mb-6">SEO Strategy</h4>
+                    <p class="text-sm opacity-60 leading-relaxed group-hover:opacity-100">Optimizing your digital footprint for visibility.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="p-12 rounded-[2.5rem] bg-white/5 border border-white/10 hover:bg-[#FFD1DC] hover:text-[#1A1A1A] transition-all duration-700 group cursor-default reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-[#FFD1DC]/10 flex items-center justify-center text-[#FFD1DC] mb-10 group-hover:bg-[#1A1A1A] group-hover:text-white transition-all">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <h4 class="text-2xl font-serif font-bold mb-6">Canva Design</h4>
+                    <p class="text-sm opacity-60 leading-relaxed group-hover:opacity-100">Premium visual assets tailored to your brand identity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-24 reveal">
+                <h2 class="text-[10px] font-black tracking-[0.4em] text-[#FF6B95] uppercase mb-6">The Track Record</h2>
+                <h3 class="text-4xl md:text-5xl font-serif font-bold tracking-tight">Past <span class="italic text-[#FF6B95]">Experiences</span>.</h3>
+            </div>
+            
+            <div class="space-y-24">
+                <!-- Experience 1 -->
+                <div class="flex flex-col md:flex-row gap-12 group reveal">
+                    <div class="md:w-64 flex-shrink-0">
+                        <span class="text-[11px] font-black tracking-[0.2em] text-[#FF6B95] uppercase">Dec 2024 – Present</span>
+                    </div>
+                    <div class="flex-1 space-y-6">
+                        <h4 class="text-3xl font-serif font-bold">Virtual Assistant & Digital Marketing Specialist</h4>
+                        <p class="text-xs font-black tracking-[0.3em] text-gray-300 uppercase">Zealous Digital Marketing</p>
+                        <ul class="space-y-4">
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Lead end-to-end content strategy for diverse business portfolios
+                            </li>
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Execute on-page SEO optimization and keyword research
+                            </li>
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Manage WordPress blog publishing and course backend support
+                            </li>
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Design high-converting lead magnets and brand assets
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience 2 -->
+                <div class="flex flex-col md:flex-row gap-12 group reveal">
+                    <div class="md:w-64 flex-shrink-0">
+                        <span class="text-[11px] font-black tracking-[0.2em] text-[#FF6B95] uppercase">Aug 2024 – Oct 2025</span>
+                    </div>
+                    <div class="flex-1 space-y-6">
+                        <h4 class="text-3xl font-serif font-bold">Virtual Assistant</h4>
+                        <p class="text-xs font-black tracking-[0.3em] text-gray-300 uppercase">The Circadian Kids</p>
+                        <ul class="space-y-4">
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Full social media management (Instagram & Facebook)
+                            </li>
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Kajabi course content creation and student management
+                            </li>
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Active Campaign email marketing and funnel automation
+                            </li>
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Squarespace website maintenance and daily engagement routines
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience 3 -->
+                <div class="flex flex-col md:flex-row gap-12 group reveal">
+                    <div class="md:w-64 flex-shrink-0">
+                        <span class="text-[11px] font-black tracking-[0.2em] text-[#FF6B95] uppercase">Jan 2023 – Oct 2024</span>
+                    </div>
+                    <div class="flex-1 space-y-6">
+                        <h4 class="text-3xl font-serif font-bold">Content Writer</h4>
+                        <p class="text-xs font-black tracking-[0.3em] text-gray-300 uppercase">Jewelry Store Marketers</p>
+                        <ul class="space-y-4">
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                SEO-optimized blog and article production
+                            </li>
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Brand voice development and consistent copywriting
+                            </li>
+                            <li class="text-[#4A4A4A] flex items-start gap-4 leading-relaxed">
+                                <span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#FFD1DC] flex-shrink-0"></span>
+                                Podcast description writing and website copy enhancement
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-[10px] font-black tracking-[0.4em] text-[#FF6B95] uppercase mb-6 reveal">Design Work</h2>
+            <h3 class="text-4xl font-serif font-bold mb-20 italic reveal tracking-tight">A Showcase of My Design Work.</h3>
+            
+            <div class="max-w-5xl mx-auto reveal">
+                <div class="aspect-[16/9] bg-gray-50 rounded-[3rem] overflow-hidden border border-gray-100 shadow-sm transition-all duration-700 hover:shadow-2xl relative group">
+                    <img src="https://lh3.googleusercontent.com/d/10rqFXLLH-V_1QOi6hbTjz8O8nnXsza8B" alt="Design Portfolio Preview" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105">
+                    <a href="https://josephinedelacruz.my.canva.site/portfolio" target="_blank" class="absolute inset-0 flex items-center justify-center bg-[#1A1A1A]/0 group-hover:bg-[#1A1A1A]/20 transition-all duration-500">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 shadow-2xl">
+                            <i data-lucide="external-link" class="text-[#1A1A1A]"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-24 reveal">
+                <a href="https://josephinedelacruz.my.canva.site/portfolio" target="_blank" class="inline-flex items-center gap-3 text-[11px] font-black tracking-[0.4em] border-b-2 border-[#FFD1DC] pb-2 hover:text-[#FF6B95] transition-all uppercase">
+                    Full Design Portfolio <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-[10px] font-black tracking-[0.4em] text-[#FF6B95] uppercase mb-6">Kind Words</h2>
+                <h3 class="text-4xl font-serif font-bold italic tracking-tight">Client Feedback.</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-[#FFF5F7] rounded-[3rem] p-12 md:p-16 text-left shadow-inner relative overflow-hidden flex flex-col justify-between hover:bg-[#FFD1DC] transition-all duration-500 hover:-translate-y-2 group cursor-default reveal">
+                    <i data-lucide="star" class="text-[#FFD1DC]/20 absolute -top-6 -left-6 w-24 h-24 group-hover:text-white/20 transition-colors"></i>
+                    <div class="relative z-10">
+                        <p class="text-xl font-serif font-bold italic leading-tight mb-10 text-[#1A1A1A]">
+                            "Josephine was fantastic to work with. She was always efficient, quick to pick up new skills, and never hesitated to go the extra mile to get things done right."
+                        </p>
+                    </div>
+                    <div class="relative z-10 flex flex-col">
+                        <span class="text-sm font-bold uppercase tracking-[0.2em]">Robin Wilson</span>
+                        <span class="text-[9px] font-black tracking-[0.3em] text-[#FF6B95] uppercase mt-2 group-hover:text-[#1A1A1A] transition-colors">Business Owner • Oct 2024</span>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-[#FFF5F7] rounded-[3rem] p-12 md:p-16 text-left shadow-inner relative overflow-hidden flex flex-col justify-between hover:bg-[#FFD1DC] transition-all duration-500 hover:-translate-y-2 group cursor-default reveal">
+                    <i data-lucide="star" class="text-[#FFD1DC]/20 absolute -top-6 -left-6 w-24 h-24 group-hover:text-white/20 transition-colors"></i>
+                    <div class="relative z-10">
+                        <p class="text-xl font-serif font-bold italic leading-tight mb-10 text-[#1A1A1A]">
+                            "Josephine's communication has been consistent, always keeping me in the loop... reliably completing tasks before the scheduled deadline, showing impressive organisation and initiative."
+                        </p>
+                        <a href="https://drive.google.com/file/d/1E1sAoELaj4G7YNtzNEsifA-ZXhZOWaEx/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 text-[10px] font-black tracking-widest text-[#FF6B95] uppercase border-b border-[#FFD1DC] pb-1 mb-8 hover:text-[#1A1A1A] transition-colors">
+                            Read Full Review <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                    <div class="relative z-10 flex flex-col">
+                        <span class="text-sm font-bold uppercase tracking-[0.2em]">Jessica Brosnan</span>
+                        <span class="text-[9px] font-black tracking-[0.3em] text-[#FF6B95] uppercase mt-2 group-hover:text-[#1A1A1A] transition-colors">Naturopath | Digital Entrepreneur • Oct 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-24">
+                <div class="space-y-12 reveal">
+                    <h2 class="text-5xl md:text-7xl font-serif font-bold leading-tight tracking-tight">Let's Get <br /><span class="italic text-[#FF6B95]">Started!</span></h2>
+                    <p class="text-lg text-[#4A4A4A] max-w-md leading-relaxed">
+                        Whether you need help launching a program, managing systems, or optimizing your SEO—I'm here to help. Send me a message and let's discuss your project.
+                    </p>
+                    
+                    <div class="space-y-10 pt-6">
+                        <a href="mailto:hellojosephinesocials@gmail.com" class="flex items-center gap-8 group">
+                            <div class="w-16 h-16 rounded-full bg-white border border-gray-100 flex items-center justify-center group-hover:bg-[#FFD1DC] transition-all shadow-sm">
+                                <i data-lucide="mail" class="text-[#1A1A1A]"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-gray-300 font-black tracking-widest uppercase mb-1">Email Me Directly</p>
+                                <p class="text-xl font-bold group-hover:text-[#FF6B95] transition-colors">hellojosephinesocials@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/639101445742" target="_blank" class="flex items-center gap-8 group">
+                            <div class="w-16 h-16 rounded-full bg-white border border-gray-100 flex items-center justify-center group-hover:bg-[#FFD1DC] transition-all shadow-sm">
+                                <i data-lucide="message-circle" class="text-[#1A1A1A]"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-gray-300 font-black tracking-widest uppercase mb-1">WhatsApp</p>
+                                <p class="text-xl font-bold group-hover:text-[#FF6B95] transition-colors">+63 910 144 5742</p>
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-8">
+                            <div class="w-16 h-16 rounded-full bg-white border border-gray-100 flex items-center justify-center shadow-sm">
+                                <i data-lucide="map-pin" class="text-[#1A1A1A]"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-gray-300 font-black tracking-widest uppercase mb-1">Location</p>
+                                <p class="text-xl font-bold">Metro Manila, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/mrearjnv" method="POST" class="p-12 md:p-20 rounded-[4rem] bg-white border border-gray-100 shadow-2xl space-y-10 reveal">
+                    <div class="space-y-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-3">
+                                <label class="text-[10px] font-black tracking-widest uppercase text-gray-400">Your Name</label>
+                                <input required name="name" type="text" placeholder="John Doe" class="w-full bg-[#FFF5F7] rounded-2xl px-6 py-5 outline-none border-none focus:ring-2 focus:ring-[#FFD1DC] transition-all font-medium">
+                            </div>
+                            <div class="space-y-3">
+                                <label class="text-[10px] font-black tracking-widest uppercase text-gray-400">Email Address</label>
+                                <input required name="email" type="email" placeholder="john@example.com" class="w-full bg-[#FFF5F7] rounded-2xl px-6 py-5 outline-none border-none focus:ring-2 focus:ring-[#FFD1DC] transition-all font-medium">
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="text-[10px] font-black tracking-widest uppercase text-gray-400">Interested In</label>
+                            <select required name="service" class="w-full bg-[#FFF5F7] rounded-2xl px-6 py-5 outline-none border-none focus:ring-2 focus:ring-[#FFD1DC] transition-all font-medium appearance-none text-gray-400">
+                                <option value="">Select a service...</option>
+                                <option value="Operations & Course Support">Operations & Course Support</option>
+                                <option value="Social Media Management">Social Media Management</option>
+                                <option value="SEO & Content Strategy">SEO & Content Strategy</option>
+                                <option value="Canva Brand Design">Canva Brand Design</option>
+                            </select>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="text-[10px] font-black tracking-widest uppercase text-gray-400">Message</label>
+                            <textarea required name="message" rows="4" placeholder="Tell me about your business goals..." class="w-full bg-[#FFF5F7] rounded-2xl px-6 py-5 outline-none border-none focus:ring-2 focus:ring-[#FFD1DC] transition-all font-medium resize-none"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full py-6 bg-[#1A1A1A] text-white font-black rounded-2xl hover:bg-[#FF6B95] transition-all text-xs tracking-[0.4em] uppercase shadow-2xl flex items-center justify-center gap-3">
+                        SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-24 bg-white border-t border-gray-50 text-center px-6">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="font-serif text-4xl font-bold tracking-[0.2em] text-[#1A1A1A]">
+                JOSEPHINE<span class="text-[#FF6B95]">.</span>
+            </div>
+            <div class="flex justify-center gap-12 text-[10px] font-black tracking-[0.4em] text-gray-300 uppercase">
+                <a href="https://linkedin.com/in/josephine-delacruz05" target="_blank" class="hover:text-[#1A1A1A] transition-colors">LinkedIn</a>
+                <a href="https://josephinedelacruz.my.canva.site/portfolio" target="_blank" class="hover:text-[#1A1A1A] transition-colors">Portfolios</a>
+            </div>
+            <p class="text-[10px] text-gray-300 tracking-[0.4em] uppercase opacity-50">
+                © 2026 JOSEPHINE DELA CRUZ. HIGH-END DIGITAL SUPPORT.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/80', 'premium-blur', 'py-4', 'border-b', 'border-gray-100');
+                nav.classList.remove('bg-transparent', 'py-8');
+            } else {
+                nav.classList.remove('bg-white/80', 'premium-blur', 'py-4', 'border-b', 'border-gray-100');
+                nav.classList.add('bg-transparent', 'py-8');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const isHidden = menu.classList.contains('translate-y-[-100%]');
+            if (isHidden) {
+                menu.classList.remove('translate-y-[-100%]', 'opacity-0');
+                menu.classList.add('translate-y-0', 'opacity-100');
+            } else {
+                menu.classList.add('translate-y-[-100%]', 'opacity-0');
+                menu.classList.remove('translate-y-0', 'opacity-100');
+            }
+        }
+
+        // Reveal Animation on Scroll
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
